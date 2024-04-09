@@ -26,4 +26,3 @@
  ## Panoptic Segmentation
  ### gelan-c-pan.pt
  wget https://github.com/WongKinYiu/yolov9/releases/download/v0.1/gelan-c-pan.pt
-

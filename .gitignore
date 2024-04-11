@@ -1,1 +1,5 @@
 weights/
+.idea/
+coco/
+*.zip
+**/__pycache__/

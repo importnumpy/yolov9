@@ -115,6 +115,23 @@ cd /yolov9
 
 </details>
 
+## [New] for JHSON's macbook M1 max
+```shell
+# 필요한 weight file들 다운로드
+sh ./weight_download.sh
+
+# 학습 & 검증을 위한 테스트 데이터셋 다운로드(coco DB)
+sh ./scripts/get_coco.sh
+
+# detection test for Mac M1: inference converted yolov9 models
+python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './yolov9-c-converted.pt' --name yolov9_c_c_640_detect
+
+# detection test for Mac M1: inference yolov9 models
+python detect_dual_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './yolov9-c.pt' --name yolov9_c_640_detect
+
+# detection test for Mac M1: inference gelan models
+python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './gelan-c.pt' --name gelan_c_c_640_detect
+```
 
 ## Evaluation
 

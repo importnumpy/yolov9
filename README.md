@@ -124,13 +124,13 @@ sh ./weight_download.sh
 sh ./scripts/get_coco.sh
 
 # detection test for Mac M1: inference converted yolov9 models
-python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './yolov9-c-converted.pt' --name yolov9_c_c_640_detect
+python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 'mps' --weights './weights/yolov9-c-converted.pt' --name yolov9_c_c_640_detect
 
 # detection test for Mac M1: inference yolov9 models
-python detect_dual_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './yolov9-c.pt' --name yolov9_c_640_detect
+python detect_dual_for_mac.py --source './data/images/horses.jpg' --img 640 --device 'mps' --weights './weights/yolov9-c.pt' --name yolov9_c_640_detect
 
 # detection test for Mac M1: inference gelan models
-python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 0 --weights './gelan-c.pt' --name gelan_c_c_640_detect
+python detect_for_mac.py --source './data/images/horses.jpg' --img 640 --device 'mps' --weights './weights/gelan-c.pt' --name gelan_c_c_640_detect
 ```
 
 ## Evaluation

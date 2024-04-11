@@ -3,3 +3,4 @@ weights/
 coco/
 *.zip
 **/__pycache__/
+runs/
